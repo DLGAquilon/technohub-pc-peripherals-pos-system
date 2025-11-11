@@ -30,67 +30,89 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AdminPage));
             pnlAdminMenu = new Panel();
-            label1 = new Label();
-            panel1 = new Panel();
-            btnTransactions = new Button();
             btnInventory = new Button();
+            panel1 = new Panel();
+            label1 = new Label();
+            btnTransactions = new Button();
             btnAccounts = new Button();
             btnSignout = new Button();
             btnExit = new Button();
-            btnDashboard = new Button();
             pnlContainerAdmin = new Panel();
             guna2ContextMenuStrip1 = new Guna.UI2.WinForms.Guna2ContextMenuStrip();
             pnlAdminMenu.SuspendLayout();
+            panel1.SuspendLayout();
             SuspendLayout();
             // 
             // pnlAdminMenu
             // 
             pnlAdminMenu.BackColor = Color.FromArgb(53, 59, 72);
-            pnlAdminMenu.Controls.Add(label1);
+            pnlAdminMenu.Controls.Add(btnInventory);
             pnlAdminMenu.Controls.Add(panel1);
             pnlAdminMenu.Controls.Add(btnTransactions);
-            pnlAdminMenu.Controls.Add(btnInventory);
             pnlAdminMenu.Controls.Add(btnAccounts);
             pnlAdminMenu.Controls.Add(btnSignout);
             pnlAdminMenu.Controls.Add(btnExit);
-            pnlAdminMenu.Controls.Add(btnDashboard);
             pnlAdminMenu.Dock = DockStyle.Left;
             pnlAdminMenu.Location = new Point(0, 0);
+            pnlAdminMenu.Margin = new Padding(3, 2, 3, 2);
             pnlAdminMenu.Name = "pnlAdminMenu";
-            pnlAdminMenu.Size = new Size(190, 625);
+            pnlAdminMenu.Size = new Size(166, 625);
             pnlAdminMenu.TabIndex = 0;
             // 
-            // label1
+            // btnInventory
             // 
-            label1.AutoSize = true;
-            label1.Font = new Font("Square721 Cn BT", 10.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label1.ForeColor = SystemColors.ControlLightLight;
-            label1.Location = new Point(70, 147);
-            label1.Name = "label1";
-            label1.Size = new Size(50, 21);
-            label1.TabIndex = 6;
-            label1.Text = "Admin";
+            btnInventory.FlatAppearance.BorderSize = 0;
+            btnInventory.FlatStyle = FlatStyle.Flat;
+            btnInventory.Font = new Font("Microsoft Sans Serif", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            btnInventory.ForeColor = SystemColors.ControlLightLight;
+            btnInventory.Image = (Image)resources.GetObject("btnInventory.Image");
+            btnInventory.ImageAlign = ContentAlignment.MiddleLeft;
+            btnInventory.Location = new Point(0, 299);
+            btnInventory.Margin = new Padding(3, 2, 3, 2);
+            btnInventory.Name = "btnInventory";
+            btnInventory.Size = new Size(166, 45);
+            btnInventory.TabIndex = 11;
+            btnInventory.Text = "    INVENTORY";
+            btnInventory.TextAlign = ContentAlignment.MiddleRight;
+            btnInventory.TextImageRelation = TextImageRelation.ImageBeforeText;
+            btnInventory.UseVisualStyleBackColor = true;
+            btnInventory.Click += btnInventory_Click;
             // 
             // panel1
             // 
             panel1.BackgroundImage = (Image)resources.GetObject("panel1.BackgroundImage");
             panel1.BackgroundImageLayout = ImageLayout.Zoom;
-            panel1.Location = new Point(10, 27);
+            panel1.Controls.Add(label1);
+            panel1.Location = new Point(9, 33);
+            panel1.Margin = new Padding(3, 2, 3, 2);
             panel1.Name = "panel1";
-            panel1.Size = new Size(170, 125);
+            panel1.Size = new Size(149, 128);
             panel1.TabIndex = 10;
+            panel1.Paint += panel1_Paint;
+            // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.Font = new Font("Microsoft Sans Serif", 10.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label1.ForeColor = SystemColors.ControlLightLight;
+            label1.Location = new Point(50, 110);
+            label1.Name = "label1";
+            label1.Size = new Size(49, 18);
+            label1.TabIndex = 6;
+            label1.Text = "Admin";
             // 
             // btnTransactions
             // 
             btnTransactions.FlatAppearance.BorderSize = 0;
             btnTransactions.FlatStyle = FlatStyle.Flat;
-            btnTransactions.Font = new Font("Square721 Cn BT", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            btnTransactions.Font = new Font("Microsoft Sans Serif", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
             btnTransactions.ForeColor = SystemColors.ControlLightLight;
             btnTransactions.Image = (Image)resources.GetObject("btnTransactions.Image");
             btnTransactions.ImageAlign = ContentAlignment.MiddleLeft;
-            btnTransactions.Location = new Point(0, 358);
+            btnTransactions.Location = new Point(0, 250);
+            btnTransactions.Margin = new Padding(3, 2, 3, 2);
             btnTransactions.Name = "btnTransactions";
-            btnTransactions.Size = new Size(200, 45);
+            btnTransactions.Size = new Size(166, 45);
             btnTransactions.TabIndex = 9;
             btnTransactions.Text = "   TRANSACTIONS   ";
             btnTransactions.TextAlign = ContentAlignment.MiddleRight;
@@ -98,37 +120,20 @@
             btnTransactions.UseVisualStyleBackColor = true;
             btnTransactions.Click += btnTransactions_Click;
             // 
-            // btnInventory
-            // 
-            btnInventory.FlatAppearance.BorderSize = 0;
-            btnInventory.FlatStyle = FlatStyle.Flat;
-            btnInventory.Font = new Font("Square721 Cn BT", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            btnInventory.ForeColor = SystemColors.ControlLightLight;
-            btnInventory.Image = (Image)resources.GetObject("btnInventory.Image");
-            btnInventory.ImageAlign = ContentAlignment.MiddleLeft;
-            btnInventory.Location = new Point(0, 307);
-            btnInventory.Name = "btnInventory";
-            btnInventory.Size = new Size(200, 45);
-            btnInventory.TabIndex = 8;
-            btnInventory.Text = "   INVENTORY   ";
-            btnInventory.TextAlign = ContentAlignment.MiddleRight;
-            btnInventory.TextImageRelation = TextImageRelation.ImageBeforeText;
-            btnInventory.UseVisualStyleBackColor = true;
-            btnInventory.Click += btnInventory_Click;
-            // 
             // btnAccounts
             // 
             btnAccounts.FlatAppearance.BorderSize = 0;
             btnAccounts.FlatStyle = FlatStyle.Flat;
-            btnAccounts.Font = new Font("Square721 Cn BT", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            btnAccounts.Font = new Font("Microsoft Sans Serif", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
             btnAccounts.ForeColor = SystemColors.ControlLightLight;
             btnAccounts.Image = (Image)resources.GetObject("btnAccounts.Image");
             btnAccounts.ImageAlign = ContentAlignment.MiddleLeft;
-            btnAccounts.Location = new Point(0, 256);
+            btnAccounts.Location = new Point(0, 201);
+            btnAccounts.Margin = new Padding(3, 2, 3, 2);
             btnAccounts.Name = "btnAccounts";
-            btnAccounts.Size = new Size(200, 45);
+            btnAccounts.Size = new Size(166, 45);
             btnAccounts.TabIndex = 7;
-            btnAccounts.Text = "   USER ACCOUNTS   ";
+            btnAccounts.Text = " USER ACCOUNTS   ";
             btnAccounts.TextImageRelation = TextImageRelation.ImageBeforeText;
             btnAccounts.UseVisualStyleBackColor = true;
             btnAccounts.Click += btnAccounts_Click;
@@ -138,13 +143,14 @@
             btnSignout.Dock = DockStyle.Bottom;
             btnSignout.FlatAppearance.BorderSize = 0;
             btnSignout.FlatStyle = FlatStyle.Flat;
-            btnSignout.Font = new Font("Square721 Cn BT", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            btnSignout.Font = new Font("Microsoft Sans Serif", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
             btnSignout.ForeColor = SystemColors.ControlLightLight;
             btnSignout.Image = (Image)resources.GetObject("btnSignout.Image");
             btnSignout.ImageAlign = ContentAlignment.MiddleLeft;
             btnSignout.Location = new Point(0, 535);
+            btnSignout.Margin = new Padding(3, 2, 3, 2);
             btnSignout.Name = "btnSignout";
-            btnSignout.Size = new Size(190, 45);
+            btnSignout.Size = new Size(166, 45);
             btnSignout.TabIndex = 5;
             btnSignout.Text = "   SIGN OUT   ";
             btnSignout.TextAlign = ContentAlignment.MiddleRight;
@@ -157,13 +163,14 @@
             btnExit.Dock = DockStyle.Bottom;
             btnExit.FlatAppearance.BorderSize = 0;
             btnExit.FlatStyle = FlatStyle.Flat;
-            btnExit.Font = new Font("Square721 Cn BT", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            btnExit.Font = new Font("Microsoft Sans Serif", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
             btnExit.ForeColor = SystemColors.ControlLightLight;
             btnExit.Image = (Image)resources.GetObject("btnExit.Image");
             btnExit.ImageAlign = ContentAlignment.MiddleLeft;
             btnExit.Location = new Point(0, 580);
+            btnExit.Margin = new Padding(3, 2, 3, 2);
             btnExit.Name = "btnExit";
-            btnExit.Size = new Size(190, 45);
+            btnExit.Size = new Size(166, 45);
             btnExit.TabIndex = 4;
             btnExit.Text = "   EXIT   ";
             btnExit.TextAlign = ContentAlignment.MiddleRight;
@@ -171,30 +178,15 @@
             btnExit.UseVisualStyleBackColor = true;
             btnExit.Click += btnExit_Click;
             // 
-            // btnDashboard
-            // 
-            btnDashboard.FlatAppearance.BorderSize = 0;
-            btnDashboard.FlatStyle = FlatStyle.Flat;
-            btnDashboard.Font = new Font("Square721 Cn BT", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            btnDashboard.ForeColor = SystemColors.ControlLightLight;
-            btnDashboard.Image = (Image)resources.GetObject("btnDashboard.Image");
-            btnDashboard.ImageAlign = ContentAlignment.MiddleLeft;
-            btnDashboard.Location = new Point(0, 205);
-            btnDashboard.Name = "btnDashboard";
-            btnDashboard.Size = new Size(200, 45);
-            btnDashboard.TabIndex = 0;
-            btnDashboard.Text = "   HOME   ";
-            btnDashboard.TextImageRelation = TextImageRelation.ImageBeforeText;
-            btnDashboard.UseVisualStyleBackColor = true;
-            btnDashboard.Click += btnDashboard_Click;
-            // 
             // pnlContainerAdmin
             // 
             pnlContainerAdmin.Dock = DockStyle.Fill;
-            pnlContainerAdmin.Location = new Point(190, 0);
+            pnlContainerAdmin.Location = new Point(166, 0);
+            pnlContainerAdmin.Margin = new Padding(3, 2, 3, 2);
             pnlContainerAdmin.Name = "pnlContainerAdmin";
-            pnlContainerAdmin.Size = new Size(780, 625);
+            pnlContainerAdmin.Size = new Size(804, 625);
             pnlContainerAdmin.TabIndex = 1;
+            pnlContainerAdmin.Paint += pnlContainerAdmin_Paint;
             // 
             // guna2ContextMenuStrip1
             // 
@@ -213,34 +205,35 @@
             // 
             // AdminPage
             // 
-            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(47, 54, 64);
             ClientSize = new Size(970, 625);
             Controls.Add(pnlContainerAdmin);
             Controls.Add(pnlAdminMenu);
             FormBorderStyle = FormBorderStyle.None;
+            Margin = new Padding(3, 2, 3, 2);
             MaximizeBox = false;
             Name = "AdminPage";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Admin";
             pnlAdminMenu.ResumeLayout(false);
-            pnlAdminMenu.PerformLayout();
+            panel1.ResumeLayout(false);
+            panel1.PerformLayout();
             ResumeLayout(false);
         }
 
         #endregion
 
         private Panel pnlAdminMenu;
-        private Button btnDashboard;
         private Button btnSignout;
         private Button btnExit;
         private Label label1;
         private Button btnTransactions;
-        private Button btnInventory;
         private Button btnAccounts;
         private Panel panel1;
         private Panel pnlContainerAdmin;
         private Guna.UI2.WinForms.Guna2ContextMenuStrip guna2ContextMenuStrip1;
+        private Button btnInventory;
     }
 }

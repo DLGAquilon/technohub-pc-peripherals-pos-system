@@ -22,7 +22,7 @@ namespace FinalCPE142LProject
         {
             InitializeComponent();
 
-            addUserControl(dashboard);
+            addUserControl(accounts);
             //ReadUsers();
         }
 
@@ -67,6 +67,19 @@ namespace FinalCPE142LProject
             System.Environment.Exit(0);
         }
 
-       
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void guna2ContextMenuStrip1_Opening(object sender, CancelEventArgs e)
+        {
+
+        }
+
+        private void pnlContainerAdmin_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }

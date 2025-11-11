@@ -34,22 +34,24 @@
             // label6
             // 
             label6.AutoSize = true;
-            label6.Font = new Font("Square721 BT", 16.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label6.Font = new Font("Microsoft Sans Serif", 16.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
             label6.ForeColor = SystemColors.ControlLightLight;
-            label6.Location = new Point(259, 295);
+            label6.Location = new Point(227, 221);
             label6.Name = "label6";
-            label6.Size = new Size(253, 35);
+            label6.Size = new Size(187, 26);
             label6.TabIndex = 18;
             label6.Text = "Admin Dashboard";
+            label6.Click += label6_Click;
             // 
             // AdminDashboard
             // 
-            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(47, 54, 64);
             Controls.Add(label6);
+            Margin = new Padding(3, 2, 3, 2);
             Name = "AdminDashboard";
-            Size = new Size(780, 625);
+            Size = new Size(682, 469);
             ResumeLayout(false);
             PerformLayout();
         }

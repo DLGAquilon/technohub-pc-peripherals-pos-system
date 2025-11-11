@@ -11,8 +11,7 @@ namespace FinalCPE142LProject.Repositories
     public class UserRepository
     {
         // CHANGE THIS
-        private readonly string connectionString = "Data Source=ASUS\\SQLEXPRESS;Initial Catalog=dboProject;Persist Security Info=True;User ID=sa;Password=123;Trust Server Certificate=True";
-
+        private readonly string connectionString = @"Data Source=DESKTOP-M1OG82B\SQLEXPRESS01;Initial Catalog=dboProject;Integrated Security=True;Trust Server Certificate=True;";
         public List<User> ReadUsers()
         {
             var users = new List<User>();
@@ -254,5 +253,31 @@ namespace FinalCPE142LProject.Repositories
             return isValid;
         }
 
+        public (int userID, string fName, string lName) GetUserInfo(string username)
+        {
+            using (SqlConnection connection = new SqlConnection(connectionString))
+            {
+                string query = "SELECT user_id, first_name, last_name FROM tblAccounts WHERE username = @username";
+
+                using (SqlCommand command = new SqlCommand(query, connection))
+                {
+                    command.Parameters.AddWithValue("@username", username);
+
+                    connection.Open();
+                    using (SqlDataReader reader = command.ExecuteReader())
+                    {
+                        if (reader.Read())
+                        {
+                            int userID = reader.GetInt32(reader.GetOrdinal("user_id"));
+                            string firstName = reader.GetString(reader.GetOrdinal("first_name"));
+                            string lastName = reader.GetString(reader.GetOrdinal("last_name"));
+
+                            return (userID, firstName, lastName);
+                        }
+                    }
+                }
+            }
+            throw new Exception("User not found.");
+        }
     }
 }

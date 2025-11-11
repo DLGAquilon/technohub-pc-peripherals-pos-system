@@ -15,5 +15,7 @@ namespace FinalCPE142LProject.Models
         public string phone = "";
         public string username = "";
         public string pass = "";
+
+        public static string currentUsername { get; set; }
     }
 }

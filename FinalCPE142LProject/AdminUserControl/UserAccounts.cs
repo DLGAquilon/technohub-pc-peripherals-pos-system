@@ -155,5 +155,15 @@ namespace FinalCPE142LProject.AdminUserControl
             //    txtSearch.ForeColor = SystemColors.GrayText; // Set text color to indicate placeholder
             //}
         }
+
+        private void label6_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void UserAccounts_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

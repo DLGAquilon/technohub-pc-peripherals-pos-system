@@ -1,4 +1,5 @@
-﻿namespace FinalCPE142LProject.ShopUserControl
+﻿
+namespace FinalCPE142LProject.ShopUserControl
 {
     partial class CPU
     {
@@ -28,273 +29,491 @@
         /// </summary>
         private void InitializeComponent()
         {
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges41 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges42 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges35 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges36 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges37 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges38 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges39 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(CPU));
-            panel1 = new Panel();
-            label1 = new Label();
-            panel3 = new Panel();
-            label3 = new Label();
-            panel2 = new Panel();
-            label4 = new Label();
-            label2 = new Label();
-            panel4 = new Panel();
-            panel5 = new Panel();
-            label5 = new Label();
-            label6 = new Label();
-            panel6 = new Panel();
-            panel7 = new Panel();
-            label7 = new Label();
-            label8 = new Label();
-            panel8 = new Panel();
-            guna2vScrollBar1 = new Guna.UI2.WinForms.Guna2VScrollBar();
-            flowLayoutPanel1 = new FlowLayoutPanel();
-            panel3.SuspendLayout();
-            panel2.SuspendLayout();
-            panel5.SuspendLayout();
-            panel7.SuspendLayout();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges40 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges49 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges50 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges43 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges44 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges45 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges46 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges47 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges48 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges57 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges58 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges51 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges52 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges53 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges54 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges55 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges56 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges65 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges66 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges59 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges60 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges61 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges62 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges63 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges64 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges67 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges68 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            cpuProd1 = new Guna.UI2.WinForms.Guna2Panel();
+            DropCpuTxt1 = new Guna.UI2.WinForms.Guna2NumericUpDown();
+            quantityCpuTxt1 = new Label();
+            cpu1cart = new Guna.UI2.WinForms.Guna2Button();
+            cpuPrev1 = new Guna.UI2.WinForms.Guna2PictureBox();
+            cpuStock1 = new Label();
+            cpuProd2 = new Guna.UI2.WinForms.Guna2Panel();
+            DropCpuTxt2 = new Guna.UI2.WinForms.Guna2NumericUpDown();
+            quantityCpuTxt2 = new Label();
+            cpu2Cart = new Guna.UI2.WinForms.Guna2Button();
+            cpuPrev2 = new Guna.UI2.WinForms.Guna2PictureBox();
+            cpuProd3 = new Guna.UI2.WinForms.Guna2Panel();
+            quantityCpuTxt3 = new Label();
+            DropCpuTxt3 = new Guna.UI2.WinForms.Guna2NumericUpDown();
+            cpu3Cart = new Guna.UI2.WinForms.Guna2Button();
+            cpuPrev3 = new Guna.UI2.WinForms.Guna2PictureBox();
+            cpuProd4 = new Guna.UI2.WinForms.Guna2Panel();
+            quantityCpuTxt4 = new Label();
+            DropCpuTxt4 = new Guna.UI2.WinForms.Guna2NumericUpDown();
+            cpu4Cart = new Guna.UI2.WinForms.Guna2Button();
+            cpuPrev4 = new Guna.UI2.WinForms.Guna2PictureBox();
+            CPUtxt = new Label();
+            cpuPreview = new Guna.UI2.WinForms.Guna2PictureBox();
+            Discription = new Label();
+            lblPrice = new Label();
+            cpuProd1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)DropCpuTxt1).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)cpuPrev1).BeginInit();
+            cpuProd2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)DropCpuTxt2).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)cpuPrev2).BeginInit();
+            cpuProd3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)DropCpuTxt3).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)cpuPrev3).BeginInit();
+            cpuProd4.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)DropCpuTxt4).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)cpuPrev4).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)cpuPreview).BeginInit();
             SuspendLayout();
             // 
-            // panel1
+            // cpuProd1
             // 
-            panel1.BackgroundImage = (Image)resources.GetObject("panel1.BackgroundImage");
-            panel1.BackgroundImageLayout = ImageLayout.Center;
-            panel1.Dock = DockStyle.Left;
-            panel1.Location = new Point(0, 0);
-            panel1.Name = "panel1";
-            panel1.Size = new Size(140, 140);
-            panel1.TabIndex = 0;
+            cpuProd1.Controls.Add(DropCpuTxt1);
+            cpuProd1.Controls.Add(quantityCpuTxt1);
+            cpuProd1.Controls.Add(cpu1cart);
+            cpuProd1.Controls.Add(cpuPrev1);
+            cpuProd1.CustomizableEdges = customizableEdges41;
+            cpuProd1.Location = new Point(12, 72);
+            cpuProd1.Name = "cpuProd1";
+            cpuProd1.ShadowDecoration.CustomizableEdges = customizableEdges42;
+            cpuProd1.Size = new Size(206, 82);
+            cpuProd1.TabIndex = 0;
+            cpuProd1.Paint += cpuProd1_Paint;
             // 
-            // label1
+            // DropCpuTxt1
             // 
-            label1.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
-            label1.AutoSize = true;
-            label1.Font = new Font("Square721 Cn BT", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label1.ForeColor = SystemColors.ControlLightLight;
-            label1.Location = new Point(155, 13);
-            label1.Name = "label1";
-            label1.Size = new Size(550, 36);
-            label1.TabIndex = 1;
-            label1.Text = "AMD RYZEN 5 5600G 6 CORES 12 THREADS 3.9GHZ (TURBO 4.4GHZ) | ZEN 3 ARCHITECTURE |\r\n16MB CACHE | WRAITH STEALTH COOLER | MULTIPACK ";
+            DropCpuTxt1.BackColor = Color.Transparent;
+            DropCpuTxt1.BorderRadius = 4;
+            DropCpuTxt1.CustomizableEdges = customizableEdges35;
+            DropCpuTxt1.Font = new Font("Segoe UI", 9F);
+            DropCpuTxt1.Location = new Point(145, 37);
+            DropCpuTxt1.Name = "DropCpuTxt1";
+            DropCpuTxt1.ShadowDecoration.CustomizableEdges = customizableEdges36;
+            DropCpuTxt1.Size = new Size(46, 15);
+            DropCpuTxt1.TabIndex = 12;
+            DropCpuTxt1.ValueChanged += DropCpuTxt1_ValueChanged;
             // 
-            // panel3
+            // quantityCpuTxt1
             // 
-            panel3.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
-            panel3.Controls.Add(label3);
-            panel3.Controls.Add(label1);
-            panel3.Controls.Add(panel1);
-            panel3.Location = new Point(48, 50);
-            panel3.Name = "panel3";
-            panel3.Size = new Size(824, 140);
-            panel3.TabIndex = 2;
+            quantityCpuTxt1.AutoSize = true;
+            quantityCpuTxt1.Font = new Font("Microsoft Sans Serif", 9.75F);
+            quantityCpuTxt1.ForeColor = Color.White;
+            quantityCpuTxt1.Location = new Point(81, 37);
+            quantityCpuTxt1.Name = "quantityCpuTxt1";
+            quantityCpuTxt1.Size = new Size(58, 16);
+            quantityCpuTxt1.TabIndex = 12;
+            quantityCpuTxt1.Text = "Quantity:";
             // 
-            // label3
+            // cpu1cart
             // 
-            label3.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
-            label3.AutoSize = true;
-            label3.Font = new Font("Square721 Cn BT", 7.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label3.ForeColor = SystemColors.ControlLightLight;
-            label3.Location = new Point(155, 59);
-            label3.Name = "label3";
-            label3.Size = new Size(291, 48);
-            label3.TabIndex = 2;
-            label3.Text = "₱8,095.00 12 Months 0% Credit Card ( ₱674.58 / Mo.)\r\n₱7,395.00 3 Months 0% Credit Card ( ₱2,465.00 / Mo.) \r\n₱6,995.00 Discounted Cash Price / Credit Card";
+            cpu1cart.BorderRadius = 5;
+            cpu1cart.CustomBorderColor = SystemColors.AppWorkspace;
+            cpu1cart.CustomizableEdges = customizableEdges37;
+            cpu1cart.DisabledState.BorderColor = Color.DarkGray;
+            cpu1cart.DisabledState.CustomBorderColor = Color.DarkGray;
+            cpu1cart.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
+            cpu1cart.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
+            cpu1cart.FillColor = Color.DarkGray;
+            cpu1cart.Font = new Font("MS UI Gothic", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            cpu1cart.ForeColor = Color.White;
+            cpu1cart.Location = new Point(81, 11);
+            cpu1cart.Name = "cpu1cart";
+            cpu1cart.ShadowDecoration.CustomizableEdges = customizableEdges38;
+            cpu1cart.Size = new Size(110, 20);
+            cpu1cart.TabIndex = 8;
+            cpu1cart.Text = "ADD TO CART";
+            cpu1cart.Click += cpu1cart_Click;
             // 
-            // panel2
+            // cpuPrev1
             // 
-            panel2.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
-            panel2.Controls.Add(label4);
-            panel2.Controls.Add(label2);
-            panel2.Controls.Add(panel4);
-            panel2.Location = new Point(48, 208);
-            panel2.Name = "panel2";
-            panel2.Size = new Size(874, 140);
-            panel2.TabIndex = 3;
+            cpuPrev1.CustomizableEdges = customizableEdges39;
+            cpuPrev1.Image = (Image)resources.GetObject("cpuPrev1.Image");
+            cpuPrev1.ImageRotate = 0F;
+            cpuPrev1.Location = new Point(17, 3);
+            cpuPrev1.Name = "cpuPrev1";
+            cpuPrev1.ShadowDecoration.CustomizableEdges = customizableEdges40;
+            cpuPrev1.Size = new Size(58, 65);
+            cpuPrev1.SizeMode = PictureBoxSizeMode.StretchImage;
+            cpuPrev1.TabIndex = 4;
+            cpuPrev1.TabStop = false;
+            cpuPrev1.Click += guna2PictureBox1_Click;
             // 
-            // label4
+            // cpuStock1
             // 
-            label4.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
-            label4.AutoSize = true;
-            label4.Font = new Font("Square721 Cn BT", 7.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label4.ForeColor = SystemColors.ControlLightLight;
-            label4.Location = new Point(155, 61);
-            label4.Name = "label4";
-            label4.Size = new Size(298, 48);
-            label4.TabIndex = 3;
-            label4.Text = "₱10,895.00 12 Months 0% Credit Card ( ₱907.92 / Mo.) \r\n₱10,195.00 3 Months 0% Credit Card ( ₱3,398.33 / Mo.) \r\n₱9,695.00 Discounted Cash Price / Credit Card\r\n";
+            cpuStock1.AutoSize = true;
+            cpuStock1.Font = new Font("Microsoft Sans Serif", 9.75F);
+            cpuStock1.ForeColor = SystemColors.Control;
+            cpuStock1.Location = new Point(264, 487);
+            cpuStock1.Name = "cpuStock1";
+            cpuStock1.Size = new Size(47, 16);
+            cpuStock1.TabIndex = 12;
+            cpuStock1.Text = "Stock: ";
+            cpuStock1.Visible = false;
             // 
-            // label2
+            // cpuProd2
             // 
-            label2.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
-            label2.AutoSize = true;
-            label2.Font = new Font("Square721 Cn BT", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label2.ForeColor = SystemColors.ControlLightLight;
-            label2.Location = new Point(155, 13);
-            label2.Name = "label2";
-            label2.Size = new Size(473, 36);
-            label2.TabIndex = 1;
-            label2.Text = "AMD RYZEN 7 5700X 8-CORES 16-THREADS (UP TO 4.6GHZ) AM4 PROCESSOR | \r\n32MB CACHE MULTIPACK";
+            cpuProd2.Controls.Add(DropCpuTxt2);
+            cpuProd2.Controls.Add(quantityCpuTxt2);
+            cpuProd2.Controls.Add(cpu2Cart);
+            cpuProd2.Controls.Add(cpuPrev2);
+            cpuProd2.CustomizableEdges = customizableEdges49;
+            cpuProd2.Location = new Point(12, 169);
+            cpuProd2.Name = "cpuProd2";
+            cpuProd2.ShadowDecoration.CustomizableEdges = customizableEdges50;
+            cpuProd2.Size = new Size(206, 80);
+            cpuProd2.TabIndex = 1;
             // 
-            // panel4
+            // DropCpuTxt2
             // 
-            panel4.BackgroundImage = (Image)resources.GetObject("panel4.BackgroundImage");
-            panel4.BackgroundImageLayout = ImageLayout.Center;
-            panel4.Dock = DockStyle.Left;
-            panel4.Location = new Point(0, 0);
-            panel4.Name = "panel4";
-            panel4.Size = new Size(140, 140);
-            panel4.TabIndex = 0;
+            DropCpuTxt2.BackColor = Color.Transparent;
+            DropCpuTxt2.BorderRadius = 4;
+            DropCpuTxt2.CustomizableEdges = customizableEdges43;
+            DropCpuTxt2.Font = new Font("Segoe UI", 9F);
+            DropCpuTxt2.Location = new Point(145, 41);
+            DropCpuTxt2.Name = "DropCpuTxt2";
+            DropCpuTxt2.ShadowDecoration.CustomizableEdges = customizableEdges44;
+            DropCpuTxt2.Size = new Size(46, 15);
+            DropCpuTxt2.TabIndex = 13;
             // 
-            // panel5
+            // quantityCpuTxt2
             // 
-            panel5.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
-            panel5.Controls.Add(label5);
-            panel5.Controls.Add(label6);
-            panel5.Controls.Add(panel6);
-            panel5.Location = new Point(48, 524);
-            panel5.Name = "panel5";
-            panel5.Size = new Size(874, 140);
-            panel5.TabIndex = 5;
+            quantityCpuTxt2.AutoSize = true;
+            quantityCpuTxt2.Font = new Font("Microsoft Sans Serif", 9.75F);
+            quantityCpuTxt2.ForeColor = Color.White;
+            quantityCpuTxt2.Location = new Point(81, 41);
+            quantityCpuTxt2.Name = "quantityCpuTxt2";
+            quantityCpuTxt2.Size = new Size(58, 16);
+            quantityCpuTxt2.TabIndex = 13;
+            quantityCpuTxt2.Text = "Quantity:";
             // 
-            // label5
+            // cpu2Cart
             // 
-            label5.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
-            label5.AutoSize = true;
-            label5.Font = new Font("Square721 Cn BT", 7.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label5.ForeColor = SystemColors.ControlLightLight;
-            label5.Location = new Point(155, 61);
-            label5.Name = "label5";
-            label5.Size = new Size(298, 48);
-            label5.TabIndex = 3;
-            label5.Text = "₱10,895.00 12 Months 0% Credit Card ( ₱907.92 / Mo.) \r\n₱10,195.00 3 Months 0% Credit Card ( ₱3,398.33 / Mo.) \r\n₱9,695.00 Discounted Cash Price / Credit Card\r\n";
+            cpu2Cart.BorderRadius = 5;
+            cpu2Cart.CustomBorderColor = SystemColors.AppWorkspace;
+            cpu2Cart.CustomizableEdges = customizableEdges45;
+            cpu2Cart.DisabledState.BorderColor = Color.DarkGray;
+            cpu2Cart.DisabledState.CustomBorderColor = Color.DarkGray;
+            cpu2Cart.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
+            cpu2Cart.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
+            cpu2Cart.FillColor = Color.DarkGray;
+            cpu2Cart.Font = new Font("MS UI Gothic", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            cpu2Cart.ForeColor = Color.White;
+            cpu2Cart.Location = new Point(81, 18);
+            cpu2Cart.Name = "cpu2Cart";
+            cpu2Cart.ShadowDecoration.CustomizableEdges = customizableEdges46;
+            cpu2Cart.Size = new Size(110, 20);
+            cpu2Cart.TabIndex = 10;
+            cpu2Cart.Text = "ADD TO CART";
+            cpu2Cart.Click += cpu2Cart_Click;
             // 
-            // label6
+            // cpuPrev2
             // 
-            label6.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
-            label6.AutoSize = true;
-            label6.Font = new Font("Square721 Cn BT", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label6.ForeColor = SystemColors.ControlLightLight;
-            label6.Location = new Point(155, 13);
-            label6.Name = "label6";
-            label6.Size = new Size(716, 36);
-            label6.TabIndex = 1;
-            label6.Text = "CORE i5-11400 WITH INTEL HD GRAPHICS (12MB CACHE UP TO 4.40GHZ 6-CORES 12-THREADS) 11TH GEN ROCKET LAKE | \r\nWITH INTEL CPU COOLER | MULTIPACK";
+            cpuPrev2.CustomizableEdges = customizableEdges47;
+            cpuPrev2.FillColor = Color.Transparent;
+            cpuPrev2.Image = (Image)resources.GetObject("cpuPrev2.Image");
+            cpuPrev2.ImageRotate = 0F;
+            cpuPrev2.Location = new Point(17, 3);
+            cpuPrev2.Name = "cpuPrev2";
+            cpuPrev2.ShadowDecoration.CustomizableEdges = customizableEdges48;
+            cpuPrev2.Size = new Size(58, 62);
+            cpuPrev2.SizeMode = PictureBoxSizeMode.Zoom;
+            cpuPrev2.TabIndex = 5;
+            cpuPrev2.TabStop = false;
+            cpuPrev2.Click += cpuPrev2_Click;
             // 
-            // panel6
+            // cpuProd3
             // 
-            panel6.BackgroundImage = (Image)resources.GetObject("panel6.BackgroundImage");
-            panel6.BackgroundImageLayout = ImageLayout.Center;
-            panel6.Dock = DockStyle.Left;
-            panel6.Location = new Point(0, 0);
-            panel6.Name = "panel6";
-            panel6.Size = new Size(140, 140);
-            panel6.TabIndex = 0;
+            cpuProd3.Controls.Add(quantityCpuTxt3);
+            cpuProd3.Controls.Add(DropCpuTxt3);
+            cpuProd3.Controls.Add(cpu3Cart);
+            cpuProd3.Controls.Add(cpuPrev3);
+            cpuProd3.CustomizableEdges = customizableEdges57;
+            cpuProd3.Location = new Point(12, 267);
+            cpuProd3.Name = "cpuProd3";
+            cpuProd3.ShadowDecoration.CustomizableEdges = customizableEdges58;
+            cpuProd3.Size = new Size(206, 89);
+            cpuProd3.TabIndex = 2;
             // 
-            // panel7
+            // quantityCpuTxt3
             // 
-            panel7.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
-            panel7.Controls.Add(label7);
-            panel7.Controls.Add(label8);
-            panel7.Controls.Add(panel8);
-            panel7.Location = new Point(48, 366);
-            panel7.Name = "panel7";
-            panel7.Size = new Size(874, 140);
-            panel7.TabIndex = 4;
+            quantityCpuTxt3.AutoSize = true;
+            quantityCpuTxt3.Font = new Font("Microsoft Sans Serif", 9.75F);
+            quantityCpuTxt3.ForeColor = Color.White;
+            quantityCpuTxt3.Location = new Point(81, 39);
+            quantityCpuTxt3.Name = "quantityCpuTxt3";
+            quantityCpuTxt3.Size = new Size(58, 16);
+            quantityCpuTxt3.TabIndex = 14;
+            quantityCpuTxt3.Text = "Quantity:";
             // 
-            // label7
+            // DropCpuTxt3
             // 
-            label7.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
-            label7.AutoSize = true;
-            label7.Font = new Font("Square721 Cn BT", 7.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label7.ForeColor = SystemColors.ControlLightLight;
-            label7.Location = new Point(155, 59);
-            label7.Name = "label7";
-            label7.Size = new Size(291, 48);
-            label7.TabIndex = 2;
-            label7.Text = "₱8,095.00 12 Months 0% Credit Card ( ₱674.58 / Mo.)\r\n₱7,395.00 3 Months 0% Credit Card ( ₱2,465.00 / Mo.) \r\n₱6,995.00 Discounted Cash Price / Credit Card";
+            DropCpuTxt3.BackColor = Color.Transparent;
+            DropCpuTxt3.BorderRadius = 4;
+            DropCpuTxt3.CustomizableEdges = customizableEdges51;
+            DropCpuTxt3.Font = new Font("Segoe UI", 9F);
+            DropCpuTxt3.Location = new Point(145, 42);
+            DropCpuTxt3.Name = "DropCpuTxt3";
+            DropCpuTxt3.ShadowDecoration.CustomizableEdges = customizableEdges52;
+            DropCpuTxt3.Size = new Size(46, 15);
+            DropCpuTxt3.TabIndex = 13;
             // 
-            // label8
+            // cpu3Cart
             // 
-            label8.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
-            label8.AutoSize = true;
-            label8.Font = new Font("Square721 Cn BT", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label8.ForeColor = SystemColors.ControlLightLight;
-            label8.Location = new Point(155, 13);
-            label8.Name = "label8";
-            label8.Size = new Size(571, 18);
-            label8.TabIndex = 1;
-            label8.Text = "CORE i3-10105 (6MB CACHE UP TO 4.40GHZ TURBO 4-CORES 8-THREADS) 10TH GEN COMET LAKE";
+            cpu3Cart.BorderRadius = 5;
+            cpu3Cart.CustomBorderColor = SystemColors.AppWorkspace;
+            cpu3Cart.CustomizableEdges = customizableEdges53;
+            cpu3Cart.DisabledState.BorderColor = Color.DarkGray;
+            cpu3Cart.DisabledState.CustomBorderColor = Color.DarkGray;
+            cpu3Cart.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
+            cpu3Cart.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
+            cpu3Cart.FillColor = Color.DarkGray;
+            cpu3Cart.Font = new Font("MS UI Gothic", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            cpu3Cart.ForeColor = Color.White;
+            cpu3Cart.Location = new Point(81, 16);
+            cpu3Cart.Name = "cpu3Cart";
+            cpu3Cart.ShadowDecoration.CustomizableEdges = customizableEdges54;
+            cpu3Cart.Size = new Size(110, 20);
+            cpu3Cart.TabIndex = 12;
+            cpu3Cart.Text = "ADD TO CART";
+            cpu3Cart.Click += cpu3Cart_Click;
             // 
-            // panel8
+            // cpuPrev3
             // 
-            panel8.BackgroundImage = (Image)resources.GetObject("panel8.BackgroundImage");
-            panel8.BackgroundImageLayout = ImageLayout.Center;
-            panel8.Dock = DockStyle.Left;
-            panel8.Location = new Point(0, 0);
-            panel8.Name = "panel8";
-            panel8.Size = new Size(140, 140);
-            panel8.TabIndex = 0;
+            cpuPrev3.CustomizableEdges = customizableEdges55;
+            cpuPrev3.FillColor = Color.Transparent;
+            cpuPrev3.Image = (Image)resources.GetObject("cpuPrev3.Image");
+            cpuPrev3.ImageRotate = 0F;
+            cpuPrev3.Location = new Point(17, 3);
+            cpuPrev3.Name = "cpuPrev3";
+            cpuPrev3.ShadowDecoration.CustomizableEdges = customizableEdges56;
+            cpuPrev3.Size = new Size(58, 60);
+            cpuPrev3.SizeMode = PictureBoxSizeMode.StretchImage;
+            cpuPrev3.TabIndex = 6;
+            cpuPrev3.TabStop = false;
+            cpuPrev3.Click += cpuPrev3_Click;
             // 
-            // guna2vScrollBar1
+            // cpuProd4
             // 
-            guna2vScrollBar1.Dock = DockStyle.Right;
-            guna2vScrollBar1.InUpdate = false;
-            guna2vScrollBar1.LargeChange = 10;
-            guna2vScrollBar1.Location = new Point(948, 0);
-            guna2vScrollBar1.Name = "guna2vScrollBar1";
-            guna2vScrollBar1.ScrollbarSize = 22;
-            guna2vScrollBar1.Size = new Size(22, 625);
-            guna2vScrollBar1.TabIndex = 6;
+            cpuProd4.Controls.Add(quantityCpuTxt4);
+            cpuProd4.Controls.Add(DropCpuTxt4);
+            cpuProd4.Controls.Add(cpu4Cart);
+            cpuProd4.Controls.Add(cpuPrev4);
+            cpuProd4.CustomizableEdges = customizableEdges65;
+            cpuProd4.Location = new Point(12, 373);
+            cpuProd4.Name = "cpuProd4";
+            cpuProd4.ShadowDecoration.CustomizableEdges = customizableEdges66;
+            cpuProd4.Size = new Size(206, 84);
+            cpuProd4.TabIndex = 3;
             // 
-            // flowLayoutPanel1
+            // quantityCpuTxt4
             // 
-            flowLayoutPanel1.AutoScroll = true;
-            flowLayoutPanel1.Dock = DockStyle.Fill;
-            flowLayoutPanel1.Location = new Point(0, 0);
-            flowLayoutPanel1.Name = "flowLayoutPanel1";
-            flowLayoutPanel1.Size = new Size(970, 625);
-            flowLayoutPanel1.TabIndex = 7;
+            quantityCpuTxt4.AutoSize = true;
+            quantityCpuTxt4.Font = new Font("Microsoft Sans Serif", 9.75F);
+            quantityCpuTxt4.ForeColor = Color.White;
+            quantityCpuTxt4.Location = new Point(79, 44);
+            quantityCpuTxt4.Name = "quantityCpuTxt4";
+            quantityCpuTxt4.Size = new Size(58, 16);
+            quantityCpuTxt4.TabIndex = 15;
+            quantityCpuTxt4.Text = "Quantity:";
+            // 
+            // DropCpuTxt4
+            // 
+            DropCpuTxt4.BackColor = Color.Transparent;
+            DropCpuTxt4.BorderRadius = 4;
+            DropCpuTxt4.CustomizableEdges = customizableEdges59;
+            DropCpuTxt4.Font = new Font("Segoe UI", 9F);
+            DropCpuTxt4.Location = new Point(145, 46);
+            DropCpuTxt4.Name = "DropCpuTxt4";
+            DropCpuTxt4.ShadowDecoration.CustomizableEdges = customizableEdges60;
+            DropCpuTxt4.Size = new Size(46, 15);
+            DropCpuTxt4.TabIndex = 13;
+            // 
+            // cpu4Cart
+            // 
+            cpu4Cart.BorderRadius = 5;
+            cpu4Cart.CustomBorderColor = SystemColors.AppWorkspace;
+            cpu4Cart.CustomizableEdges = customizableEdges61;
+            cpu4Cart.DisabledState.BorderColor = Color.DarkGray;
+            cpu4Cart.DisabledState.CustomBorderColor = Color.DarkGray;
+            cpu4Cart.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
+            cpu4Cart.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
+            cpu4Cart.FillColor = Color.DarkGray;
+            cpu4Cart.Font = new Font("MS UI Gothic", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            cpu4Cart.ForeColor = Color.White;
+            cpu4Cart.Location = new Point(81, 20);
+            cpu4Cart.Name = "cpu4Cart";
+            cpu4Cart.ShadowDecoration.CustomizableEdges = customizableEdges62;
+            cpu4Cart.Size = new Size(110, 20);
+            cpu4Cart.TabIndex = 10;
+            cpu4Cart.Text = "ADD TO CART";
+            cpu4Cart.Click += cpu4Cart_Click;
+            // 
+            // cpuPrev4
+            // 
+            cpuPrev4.CustomizableEdges = customizableEdges63;
+            cpuPrev4.Image = (Image)resources.GetObject("cpuPrev4.Image");
+            cpuPrev4.ImageRotate = 0F;
+            cpuPrev4.Location = new Point(17, 3);
+            cpuPrev4.Name = "cpuPrev4";
+            cpuPrev4.ShadowDecoration.CustomizableEdges = customizableEdges64;
+            cpuPrev4.Size = new Size(58, 67);
+            cpuPrev4.SizeMode = PictureBoxSizeMode.StretchImage;
+            cpuPrev4.TabIndex = 6;
+            cpuPrev4.TabStop = false;
+            cpuPrev4.Click += cpuPrev4_Click;
+            // 
+            // CPUtxt
+            // 
+            CPUtxt.AutoSize = true;
+            CPUtxt.Font = new Font("MS Gothic", 15.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            CPUtxt.ForeColor = SystemColors.ButtonHighlight;
+            CPUtxt.Location = new Point(12, 25);
+            CPUtxt.Name = "CPUtxt";
+            CPUtxt.Size = new Size(358, 21);
+            CPUtxt.TabIndex = 6;
+            CPUtxt.Text = "Central Processing Unit (CPU)";
+            // 
+            // cpuPreview
+            // 
+            cpuPreview.CustomizableEdges = customizableEdges67;
+            cpuPreview.FillColor = Color.Transparent;
+            cpuPreview.ImageRotate = 0F;
+            cpuPreview.Location = new Point(277, 83);
+            cpuPreview.Name = "cpuPreview";
+            cpuPreview.ShadowDecoration.CustomizableEdges = customizableEdges68;
+            cpuPreview.Size = new Size(406, 305);
+            cpuPreview.SizeMode = PictureBoxSizeMode.StretchImage;
+            cpuPreview.TabIndex = 9;
+            cpuPreview.TabStop = false;
+            cpuPreview.Click += cpuPreview_Click;
+            // 
+            // Discription
+            // 
+            Discription.AutoSize = true;
+            Discription.Font = new Font("Microsoft Sans Serif", 9.75F);
+            Discription.ForeColor = SystemColors.ButtonFace;
+            Discription.Location = new Point(264, 407);
+            Discription.Name = "Discription";
+            Discription.Size = new Size(487, 16);
+            Discription.TabIndex = 10;
+            Discription.Text = "AMD RYZEN 5 5600G 6 CORES 12 THREADS 3.9GHZ (TURBO 4.4GHZ) | ZEN 3 ";
+            Discription.Visible = false;
+            // 
+            // lblPrice
+            // 
+            lblPrice.AutoSize = true;
+            lblPrice.Font = new Font("Microsoft Sans Serif", 9.75F);
+            lblPrice.ForeColor = SystemColors.Control;
+            lblPrice.Location = new Point(264, 427);
+            lblPrice.Name = "lblPrice";
+            lblPrice.Size = new Size(41, 16);
+            lblPrice.TabIndex = 13;
+            lblPrice.Text = "Price:";
+            lblPrice.Visible = false;
             // 
             // CPU
             // 
-            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(47, 54, 64);
-            Controls.Add(guna2vScrollBar1);
-            Controls.Add(panel5);
-            Controls.Add(panel7);
-            Controls.Add(panel2);
-            Controls.Add(panel3);
-            Controls.Add(flowLayoutPanel1);
+            Controls.Add(lblPrice);
+            Controls.Add(cpuStock1);
+            Controls.Add(Discription);
+            Controls.Add(cpuPreview);
+            Controls.Add(CPUtxt);
+            Controls.Add(cpuProd4);
+            Controls.Add(cpuProd3);
+            Controls.Add(cpuProd2);
+            Controls.Add(cpuProd1);
+            Margin = new Padding(3, 2, 3, 2);
             Name = "CPU";
-            Size = new Size(970, 625);
-            panel3.ResumeLayout(false);
-            panel3.PerformLayout();
-            panel2.ResumeLayout(false);
-            panel2.PerformLayout();
-            panel5.ResumeLayout(false);
-            panel5.PerformLayout();
-            panel7.ResumeLayout(false);
-            panel7.PerformLayout();
+            Size = new Size(784, 582);
+            cpuProd1.ResumeLayout(false);
+            cpuProd1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)DropCpuTxt1).EndInit();
+            ((System.ComponentModel.ISupportInitialize)cpuPrev1).EndInit();
+            cpuProd2.ResumeLayout(false);
+            cpuProd2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)DropCpuTxt2).EndInit();
+            ((System.ComponentModel.ISupportInitialize)cpuPrev2).EndInit();
+            cpuProd3.ResumeLayout(false);
+            cpuProd3.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)DropCpuTxt3).EndInit();
+            ((System.ComponentModel.ISupportInitialize)cpuPrev3).EndInit();
+            cpuProd4.ResumeLayout(false);
+            cpuProd4.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)DropCpuTxt4).EndInit();
+            ((System.ComponentModel.ISupportInitialize)cpuPrev4).EndInit();
+            ((System.ComponentModel.ISupportInitialize)cpuPreview).EndInit();
             ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
-        private Panel panel1;
-        private Label label1;
-        private Panel panel3;
-        private Panel panel2;
-        private Label label2;
-        private Panel panel4;
-        private Label label3;
-        private Label label4;
-        private Panel panel5;
-        private Label label5;
-        private Label label6;
-        private Panel panel6;
-        private Panel panel7;
-        private Label label7;
-        private Label label8;
-        private Panel panel8;
-        private Guna.UI2.WinForms.Guna2VScrollBar guna2vScrollBar1;
-        private FlowLayoutPanel flowLayoutPanel1;
+
+        private Guna.UI2.WinForms.Guna2Panel cpuProd1;
+        private Guna.UI2.WinForms.Guna2Panel cpuProd2;
+        private Guna.UI2.WinForms.Guna2Panel cpuProd3;
+        private Guna.UI2.WinForms.Guna2PictureBox cpuPrev1;
+        private Guna.UI2.WinForms.Guna2PictureBox cpuPrev2;
+        private Guna.UI2.WinForms.Guna2PictureBox cpuPrev3;
+        private Guna.UI2.WinForms.Guna2Panel cpuProd4;
+        private Guna.UI2.WinForms.Guna2PictureBox cpuPrev4;
+        private Label CPUtxt;
+        private Guna.UI2.WinForms.Guna2PictureBox cpuPreview;
+        private Guna.UI2.WinForms.Guna2Button cpu1cart;
+        private Guna.UI2.WinForms.Guna2Button cpu2Cart;
+        private Guna.UI2.WinForms.Guna2Button cpu3Cart;
+        private Guna.UI2.WinForms.Guna2Button cpu4Cart;
+        private Label Discription;
+        private Label Price;
+        private Label quantityCpuTxt1;
+        private Guna.UI2.WinForms.Guna2NumericUpDown DropCpuTxt1;
+        private Guna.UI2.WinForms.Guna2NumericUpDown DropCpuTxt2;
+        private Label quantityCpuTxt2;
+        private Label quantityCpuTxt3;
+        private Guna.UI2.WinForms.Guna2NumericUpDown DropCpuTxt3;
+        private Label quantityCpuTxt4;
+        private Guna.UI2.WinForms.Guna2NumericUpDown DropCpuTxt4;
+        private Label cpuStock1;
+        private Label lblPrice;
     }
 }

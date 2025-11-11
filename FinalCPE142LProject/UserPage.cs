@@ -16,22 +16,38 @@ namespace FinalCPE142LProject
     {
         bool sidebarExpand;
         bool shopCollapse;
+        private string currentUsername;
 
-        Home home = new Home();
-        Shop shop = new Shop();
-        Cart cart = new Cart();
-        UserInfo userInfo = new UserInfo();
+        // Initialize these only when needed
+        private Home home;
+        private Shop shop;
+        private UserInfo userInfo;
 
         // SHOP BUTTON
-        CPU CPU = new CPU();
-        GPU GPU = new GPU();
-        RAM RAM = new RAM();
-        MBoard mBoard = new MBoard();
-        public UserPage()
+        private CPU CPU;
+        private GPU GPU;
+        private RAM RAM;
+        private MBoard mBoard;
+
+        public UserPage(string username)
         {
             InitializeComponent();
-            addUserControl(home);
+            currentUsername = username;
+
+            // Initialize the controls that don't need frequent refreshing
+            home = new Home();
+            shop = new Shop();
+            userInfo = new UserInfo();
+
+            CPU = new CPU();
+            GPU = new GPU();
+            RAM = new RAM();
+            mBoard = new MBoard();
+
+            // Show initial view
+            addUserControl(CPU);
         }
+
         private void addUserControl(UserControl userControl)
         {
             userControl.Dock = DockStyle.Fill;
@@ -47,12 +63,13 @@ namespace FinalCPE142LProject
 
         private void btnShop_Click(object sender, EventArgs e)
         {
-            //addUserControl(shop);
             shopTimer.Start();
         }
 
         private void btnCart_Click(object sender, EventArgs e)
         {
+            // Create a new instance of Cart each time to ensure fresh data
+            Cart cart = new Cart();
             addUserControl(cart);
         }
 
@@ -140,6 +157,16 @@ namespace FinalCPE142LProject
         private void btnMBoard_Click(object sender, EventArgs e)
         {
             addUserControl(mBoard);
+        }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pnlContainerMain_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }

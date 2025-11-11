@@ -14,6 +14,7 @@ namespace FinalCPE142LProject.AdminUserControl
 {
     public partial class Inventory : UserControl
     {
+        InventoryClass ic = new InventoryClass();
         public Inventory()
         {
             InitializeComponent();
@@ -22,78 +23,124 @@ namespace FinalCPE142LProject.AdminUserControl
 
         public void ReadProducts()
         {
-            DataTable dataTable = new DataTable();
+            ic.ViewProducts(dgvInventory);
+        }
 
-            dataTable.Columns.Add("Product ID");
-            dataTable.Columns.Add("Quantity");
-            dataTable.Columns.Add("Product name");
-            dataTable.Columns.Add("Category");
-            dataTable.Columns.Add("Price");
+        private void ClearFields()
+        {
 
-            var productRepo = new ProductRepository();
-            var products = productRepo.ReadProducts();
-
-            foreach (var product in products)
-            {
-                var row = dataTable.NewRow();
-
-                row["Product ID"] = product.productID;
-                row["Quantity"] = product.quantity;
-                row["Product name"] = product.productName;
-                row["Category"] = product.category;
-                row["Price"] = product.itemPrice;
-
-                dataTable.Rows.Add(row);
-            }
-            // ADDED this.
-            this.dgvInventory.DataSource = dataTable;
+            txtName.Clear();
+            txtCategory.Clear();
+            txtQuantity.Clear();
+            txtPrice.Clear();
         }
 
         private void btnAdd_Click(object sender, EventArgs e)
         {
-            CreateProduct frmCreate = new CreateProduct();
-            if (frmCreate.ShowDialog() == DialogResult.Cancel) return;
+            try
+            {
+                if (string.IsNullOrEmpty(txtName.Text) || string.IsNullOrEmpty(txtCategory.Text) ||
+                    string.IsNullOrEmpty(txtQuantity.Text) || string.IsNullOrEmpty(txtPrice.Text))
+                {
+                    MessageBox.Show("Please fill in all fields.");
+                    return;
+                }
 
-            ReadProducts();
+                string name = txtName.Text;
+                string category = txtCategory.Text;
+                int quantity = int.Parse(txtQuantity.Text);
+                decimal price = decimal.Parse(txtPrice.Text);
+
+                ic.AddProduct(name, category, quantity, price);
+                MessageBox.Show("Product added successfully.");
+                ReadProducts();
+                ClearFields();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error: " + ex.Message);
+            }
         }
 
         private void btnUpdate_Click(object sender, EventArgs e)
         {
-            var val = this.dgvInventory.SelectedRows[0].Cells[0].Value.ToString();
-            if (val == null || val.Length == 0) return;
 
-            int productID = Convert.ToInt32(val);
 
-            var productRepo = new ProductRepository();
-            var product = productRepo.ReadProduct(productID);
-
-            if (product == null) return;
-
-            CreateProduct frmCreateProduct = new CreateProduct();
-            frmCreateProduct.updateProduct(product);
-
-            if (frmCreateProduct.ShowDialog() == DialogResult.OK)
+            try
             {
+                if (string.IsNullOrEmpty(txtId.Text) || string.IsNullOrEmpty(txtName.Text) || string.IsNullOrEmpty(txtCategory.Text) ||
+                    string.IsNullOrEmpty(txtQuantity.Text) || string.IsNullOrEmpty(txtPrice.Text))
+                {
+                    MessageBox.Show("Please fill in all fields.");
+                    return;
+                }
+
+                int id = int.Parse(txtId.Text);
+                string name = txtName.Text;
+                string category = txtCategory.Text;
+                int quantity = int.Parse(txtQuantity.Text);
+                decimal price = decimal.Parse(txtPrice.Text);
+
+                ic.UpdateProduct(id, name, category, quantity, price);
+                MessageBox.Show("Product updated successfully.");
                 ReadProducts();
+                ClearFields();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error: " + ex.Message);
             }
         }
+
         private void btnRemove_Click(object sender, EventArgs e)
         {
-            var val = this.dgvInventory.SelectedRows[0].Cells[0].Value.ToString();
+            try
+            {
+                if (string.IsNullOrEmpty(txtName.Text))
+                {
+                    MessageBox.Show("Please enter the Product ID to remove.");
+                    return;
+                }
+                else
+                {
+                    string name = txtName.Text;
+                    ic.DeleteProduct(name);
+                    MessageBox.Show("Product removed successfully.");
+                    ReadProducts();
+                    ClearFields();
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error: " + ex.Message);
+            }
+        }
 
-            if (val == null || val.Length == 0) return;
 
-            int productID = Convert.ToInt32(val);
 
-            var productRepo = new ProductRepository();
 
-            DialogResult dialogResult = MessageBox.Show("Are you sure you want to remove this product?", "Remove Product", MessageBoxButtons.YesNo);
+        private void groupBox1_Enter(object sender, EventArgs e)
+        {
 
-            if (dialogResult == DialogResult.No) return;
+        }
 
-            productRepo.deleteProduct(productID);
+        private void label1_Click(object sender, EventArgs e)
+        {
 
-            ReadProducts();
+        }
+
+        private void dgvInventory_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            if (e.RowIndex >= 0)
+            {
+                DataGridViewRow row = this.dgvInventory.Rows[e.RowIndex];
+
+                txtId.Text = row.Cells["product_id"].Value.ToString();
+                txtName.Text = row.Cells["product_name"].Value.ToString();
+                txtCategory.Text = row.Cells["category"].Value.ToString();
+                txtQuantity.Text = row.Cells["quantity"].Value.ToString();
+                txtPrice.Text = row.Cells["price"].Value.ToString();
+            }
         }
     }
 }

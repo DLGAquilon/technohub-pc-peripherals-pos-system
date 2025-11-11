@@ -12,7 +12,7 @@ namespace FinalCPE142LProject.Repositories
     public class ProductRepository
     {
         // CHANGE THIS
-        private readonly string connectionString = "Data Source=ASUS\\SQLEXPRESS;Initial Catalog=dboProject;Persist Security Info=True;User ID=sa;Password=123;Trust Server Certificate=True";
+        private readonly string connectionString = @"Data Source=DESKTOP-M1OG82B\SQLEXPRESS01;Initial Catalog=dboProject;Integrated Security=True;Trust Server Certificate=True;";
 
         public List<Product> ReadProducts()
         {

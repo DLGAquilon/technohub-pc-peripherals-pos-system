@@ -73,17 +73,16 @@
             txtAddress.DisabledState.PlaceholderForeColor = Color.FromArgb(138, 138, 138);
             txtAddress.FillColor = Color.FromArgb(47, 54, 64);
             txtAddress.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
-            txtAddress.Font = new Font("Square721 Cn BT", 10.2F);
+            txtAddress.Font = new Font("Microsoft Sans Serif", 10.2F);
             txtAddress.ForeColor = Color.White;
             txtAddress.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
-            txtAddress.Location = new Point(96, 302);
-            txtAddress.Margin = new Padding(3, 4, 3, 4);
+            txtAddress.Location = new Point(93, 300);
             txtAddress.Name = "txtAddress";
             txtAddress.PasswordChar = '\0';
             txtAddress.PlaceholderText = "";
             txtAddress.SelectedText = "";
             txtAddress.ShadowDecoration.CustomizableEdges = customizableEdges2;
-            txtAddress.Size = new Size(361, 32);
+            txtAddress.Size = new Size(363, 30);
             txtAddress.TabIndex = 19;
             // 
             // lblLogin
@@ -91,11 +90,11 @@
             lblLogin.AutoSize = true;
             lblLogin.BackColor = Color.FromArgb(47, 54, 64);
             lblLogin.Cursor = Cursors.Hand;
-            lblLogin.Font = new Font("Square721 Cn BT", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            lblLogin.Font = new Font("Microsoft Sans Serif", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
             lblLogin.ForeColor = SystemColors.ControlLightLight;
-            lblLogin.Location = new Point(392, 519);
+            lblLogin.Location = new Point(346, 520);
             lblLogin.Name = "lblLogin";
-            lblLogin.Size = new Size(39, 18);
+            lblLogin.Size = new Size(43, 15);
             lblLogin.TabIndex = 18;
             lblLogin.Text = "Login";
             lblLogin.Click += lblLogin_Click;
@@ -104,11 +103,11 @@
             // 
             label1.AutoSize = true;
             label1.BackColor = Color.FromArgb(47, 54, 64);
-            label1.Font = new Font("Square721 Cn BT", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label1.Font = new Font("Microsoft Sans Serif", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
             label1.ForeColor = SystemColors.ControlLightLight;
-            label1.Location = new Point(252, 519);
+            label1.Location = new Point(199, 520);
             label1.Name = "label1";
-            label1.Size = new Size(143, 18);
+            label1.Size = new Size(146, 15);
             label1.TabIndex = 17;
             label1.Text = "Already have an account?";
             // 
@@ -122,12 +121,13 @@
             btnSignup.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
             btnSignup.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
             btnSignup.FillColor = Color.FromArgb(41, 45, 53);
-            btnSignup.Font = new Font("Square721 Cn BT", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            btnSignup.Font = new Font("Microsoft Sans Serif", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
             btnSignup.ForeColor = Color.White;
-            btnSignup.Location = new Point(98, 510);
+            btnSignup.Location = new Point(84, 509);
+            btnSignup.Margin = new Padding(3, 2, 3, 2);
             btnSignup.Name = "btnSignup";
             btnSignup.ShadowDecoration.CustomizableEdges = customizableEdges4;
-            btnSignup.Size = new Size(114, 37);
+            btnSignup.Size = new Size(100, 37);
             btnSignup.TabIndex = 16;
             btnSignup.Text = "SIGN UP";
             btnSignup.Click += btnSignup_Click;
@@ -145,17 +145,16 @@
             txtConPass.DisabledState.PlaceholderForeColor = Color.FromArgb(138, 138, 138);
             txtConPass.FillColor = Color.FromArgb(47, 54, 64);
             txtConPass.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
-            txtConPass.Font = new Font("Square721 Cn BT", 10.2F);
+            txtConPass.Font = new Font("Microsoft Sans Serif", 10.2F);
             txtConPass.ForeColor = Color.White;
             txtConPass.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
-            txtConPass.Location = new Point(294, 443);
-            txtConPass.Margin = new Padding(3, 4, 3, 4);
+            txtConPass.Location = new Point(291, 441);
             txtConPass.Name = "txtConPass";
             txtConPass.PasswordChar = '•';
             txtConPass.PlaceholderText = "";
             txtConPass.SelectedText = "";
             txtConPass.ShadowDecoration.CustomizableEdges = customizableEdges6;
-            txtConPass.Size = new Size(163, 32);
+            txtConPass.Size = new Size(165, 30);
             txtConPass.TabIndex = 15;
             // 
             // txtPass
@@ -171,17 +170,16 @@
             txtPass.DisabledState.PlaceholderForeColor = Color.FromArgb(138, 138, 138);
             txtPass.FillColor = Color.FromArgb(47, 54, 64);
             txtPass.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
-            txtPass.Font = new Font("Square721 Cn BT", 10.2F);
+            txtPass.Font = new Font("Microsoft Sans Serif", 10.2F);
             txtPass.ForeColor = Color.White;
             txtPass.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
-            txtPass.Location = new Point(96, 442);
-            txtPass.Margin = new Padding(3, 4, 3, 4);
+            txtPass.Location = new Point(93, 441);
             txtPass.Name = "txtPass";
             txtPass.PasswordChar = '•';
             txtPass.PlaceholderText = "";
             txtPass.SelectedText = "";
             txtPass.ShadowDecoration.CustomizableEdges = customizableEdges8;
-            txtPass.Size = new Size(163, 32);
+            txtPass.Size = new Size(165, 30);
             txtPass.TabIndex = 15;
             // 
             // txtPhone
@@ -197,17 +195,16 @@
             txtPhone.DisabledState.PlaceholderForeColor = Color.FromArgb(138, 138, 138);
             txtPhone.FillColor = Color.FromArgb(47, 54, 64);
             txtPhone.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
-            txtPhone.Font = new Font("Square721 Cn BT", 10.2F);
+            txtPhone.Font = new Font("Microsoft Sans Serif", 10.2F);
             txtPhone.ForeColor = Color.White;
             txtPhone.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
-            txtPhone.Location = new Point(294, 372);
-            txtPhone.Margin = new Padding(3, 4, 3, 4);
+            txtPhone.Location = new Point(291, 369);
             txtPhone.Name = "txtPhone";
             txtPhone.PasswordChar = '\0';
             txtPhone.PlaceholderText = "";
             txtPhone.SelectedText = "";
             txtPhone.ShadowDecoration.CustomizableEdges = customizableEdges10;
-            txtPhone.Size = new Size(163, 32);
+            txtPhone.Size = new Size(165, 30);
             txtPhone.TabIndex = 13;
             // 
             // txtUser
@@ -223,17 +220,16 @@
             txtUser.DisabledState.PlaceholderForeColor = Color.FromArgb(138, 138, 138);
             txtUser.FillColor = Color.FromArgb(47, 54, 64);
             txtUser.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
-            txtUser.Font = new Font("Square721 Cn BT", 10.2F);
+            txtUser.Font = new Font("Microsoft Sans Serif", 10.2F);
             txtUser.ForeColor = Color.White;
             txtUser.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
-            txtUser.Location = new Point(96, 372);
-            txtUser.Margin = new Padding(3, 4, 3, 4);
+            txtUser.Location = new Point(93, 369);
             txtUser.Name = "txtUser";
             txtUser.PasswordChar = '\0';
             txtUser.PlaceholderText = "";
             txtUser.SelectedText = "";
             txtUser.ShadowDecoration.CustomizableEdges = customizableEdges12;
-            txtUser.Size = new Size(163, 32);
+            txtUser.Size = new Size(165, 30);
             txtUser.TabIndex = 12;
             // 
             // txtLname
@@ -249,17 +245,16 @@
             txtLname.DisabledState.PlaceholderForeColor = Color.FromArgb(138, 138, 138);
             txtLname.FillColor = Color.FromArgb(47, 54, 64);
             txtLname.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
-            txtLname.Font = new Font("Square721 Cn BT", 10.2F);
+            txtLname.Font = new Font("Microsoft Sans Serif", 10.2F);
             txtLname.ForeColor = Color.White;
             txtLname.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
-            txtLname.Location = new Point(96, 230);
-            txtLname.Margin = new Padding(3, 4, 3, 4);
+            txtLname.Location = new Point(93, 228);
             txtLname.Name = "txtLname";
             txtLname.PasswordChar = '\0';
             txtLname.PlaceholderText = "";
             txtLname.SelectedText = "";
             txtLname.ShadowDecoration.CustomizableEdges = customizableEdges14;
-            txtLname.Size = new Size(361, 32);
+            txtLname.Size = new Size(363, 30);
             txtLname.TabIndex = 11;
             // 
             // txtFname
@@ -275,28 +270,28 @@
             txtFname.DisabledState.PlaceholderForeColor = Color.FromArgb(138, 138, 138);
             txtFname.FillColor = Color.FromArgb(47, 54, 64);
             txtFname.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
-            txtFname.Font = new Font("Square721 Cn BT", 10.2F);
+            txtFname.Font = new Font("Microsoft Sans Serif", 10.2F);
             txtFname.ForeColor = Color.White;
             txtFname.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
-            txtFname.Location = new Point(96, 158);
-            txtFname.Margin = new Padding(3, 4, 3, 4);
+            txtFname.Location = new Point(93, 157);
             txtFname.Name = "txtFname";
             txtFname.PasswordChar = '\0';
             txtFname.PlaceholderText = "";
             txtFname.SelectedText = "";
             txtFname.ShadowDecoration.CustomizableEdges = customizableEdges16;
-            txtFname.Size = new Size(361, 32);
+            txtFname.Size = new Size(363, 30);
             txtFname.TabIndex = 10;
             // 
             // chkboxShowConPass
             // 
             chkboxShowConPass.AutoSize = true;
             chkboxShowConPass.BackColor = Color.Transparent;
-            chkboxShowConPass.Font = new Font("Square721 Cn BT", 7.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            chkboxShowConPass.Font = new Font("Microsoft Sans Serif", 7.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
             chkboxShowConPass.ForeColor = Color.White;
-            chkboxShowConPass.Location = new Point(353, 479);
+            chkboxShowConPass.Location = new Point(355, 476);
+            chkboxShowConPass.Margin = new Padding(3, 2, 3, 2);
             chkboxShowConPass.Name = "chkboxShowConPass";
-            chkboxShowConPass.Size = new Size(104, 20);
+            chkboxShowConPass.Size = new Size(101, 17);
             chkboxShowConPass.TabIndex = 20;
             chkboxShowConPass.Text = "Show password";
             chkboxShowConPass.UseVisualStyleBackColor = false;
@@ -306,11 +301,12 @@
             // 
             chkboxShowPass.AutoSize = true;
             chkboxShowPass.BackColor = Color.Transparent;
-            chkboxShowPass.Font = new Font("Square721 Cn BT", 7.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            chkboxShowPass.Font = new Font("Microsoft Sans Serif", 7.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
             chkboxShowPass.ForeColor = Color.White;
-            chkboxShowPass.Location = new Point(155, 478);
+            chkboxShowPass.Location = new Point(157, 476);
+            chkboxShowPass.Margin = new Padding(3, 2, 3, 2);
             chkboxShowPass.Name = "chkboxShowPass";
-            chkboxShowPass.Size = new Size(104, 20);
+            chkboxShowPass.Size = new Size(101, 17);
             chkboxShowPass.TabIndex = 21;
             chkboxShowPass.Text = "Show password";
             chkboxShowPass.UseVisualStyleBackColor = false;
@@ -321,16 +317,16 @@
             btnCLose.AutoSize = true;
             btnCLose.Cursor = Cursors.Hand;
             btnCLose.Image = (Image)resources.GetObject("btnCLose.Image");
-            btnCLose.Location = new Point(935, 18);
+            btnCLose.Location = new Point(938, 16);
             btnCLose.Name = "btnCLose";
-            btnCLose.Size = new Size(13, 20);
+            btnCLose.Size = new Size(10, 15);
             btnCLose.TabIndex = 22;
             btnCLose.Text = " ";
             btnCLose.Click += btnCLose_Click;
             // 
             // Signup
             // 
-            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
             BackgroundImageLayout = ImageLayout.Center;
@@ -350,9 +346,11 @@
             Controls.Add(txtFname);
             DoubleBuffered = true;
             FormBorderStyle = FormBorderStyle.None;
+            Margin = new Padding(3, 2, 3, 2);
             Name = "Signup";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Signup";
+            Load += Signup_Load;
             ResumeLayout(false);
             PerformLayout();
         }

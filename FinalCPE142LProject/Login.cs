@@ -1,4 +1,6 @@
-﻿using FinalCPE142LProject.Repositories;
+﻿using FinalCPE142LProject.MainUserControl;
+using FinalCPE142LProject.Models;
+using FinalCPE142LProject.Repositories;
 using FinalCPE142LProject.UserAccountNamespace;
 using Microsoft.Data.SqlClient;
 using System;
@@ -16,8 +18,11 @@ namespace FinalCPE142LProject
     public partial class Login : Form
     {
         // CHANGE CONNECTION STRING
-        SqlConnection connection = new SqlConnection(@"Data Source=ASUS\SQLEXPRESS;Initial Catalog=dboProject;Persist Security Info=True;User ID=sa;Password=123;Trust Server Certificate=True");
+        SqlConnection connection = new SqlConnection(@"Data Source=DESKTOP-M1OG82B\SQLEXPRESS01;Initial Catalog=dboProject;Integrated Security=True;Trust Server Certificate=True;");
         AdminRole admin;
+
+        private string username;
+        private string pass;
         public Login()
         {
             InitializeComponent();
@@ -46,8 +51,8 @@ namespace FinalCPE142LProject
 
         private void btnLogin_Click(object sender, EventArgs e)
         {
-            string username = txtUser.Text.Trim();
-            string pass = txtPass.Text.Trim();
+            username = txtUser.Text.Trim();
+            pass = txtPass.Text.Trim();
 
             admin = new AdminRole("Andrea", "Caunga", "admin", username, pass);
             // Input validation for empty fields
@@ -71,7 +76,12 @@ namespace FinalCPE142LProject
             else if (isValidUser)
             {
                 this.Hide();
-                UserPage frmUser = new UserPage();
+
+                int id = GetUserID(username);
+
+                UserPage frmUser = new UserPage(username);
+                Invoice frmInvoice = new Invoice(username, id);
+                User.currentUsername = username;
                 frmUser.ShowDialog();
                 this.Close();
             }
@@ -81,9 +91,54 @@ namespace FinalCPE142LProject
             }
         }
 
+
+
         private void btnCLose_Click(object sender, EventArgs e)
         {
             System.Environment.Exit(0);
         }
+
+        private void Login_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        public int GetUserID(string username)
+        {
+            if (string.IsNullOrEmpty(username))
+            {
+                MessageBox.Show("Username cannot be empty");
+                return -1;
+            }
+
+            using (SqlConnection connection = new SqlConnection(@"Data Source=DESKTOP-M1OG82B\SQLEXPRESS01;Initial Catalog=dboProject;Integrated Security=True;Trust Server Certificate=True;"))
+            {
+                try
+                {
+                    connection.Open();
+                    string query = "SELECT user_id FROM dbo.tblAccounts WHERE username = @username";
+
+                    using (SqlCommand command = new SqlCommand(query, connection))
+                    {
+                        command.Parameters.Add("@username", SqlDbType.NVarChar).Value = username;
+
+                        object result = command.ExecuteScalar();
+                        if (result != null && result != DBNull.Value)
+                        {
+                            return Convert.ToInt32(result);
+                        }
+
+                        MessageBox.Show($"No user found with username: {username}");
+                        return -1;
+                    }
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show($"Database error: {ex.Message}");
+                    return -1;
+                }
+            }
+        }
+
     }
 }

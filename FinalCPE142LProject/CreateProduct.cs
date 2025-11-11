@@ -66,5 +66,10 @@ namespace FinalCPE142LProject
 
             this.DialogResult = DialogResult.OK;
         }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
